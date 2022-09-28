@@ -1,0 +1,30 @@
+<?php
+//데이터에서 고객이름만 페이지에 출력
+ //memeber 변수를 선언하고 데이터형을 배열로 선언
+
+ $member = array();
+ //member 배열에 0 인덱스를 생성을 하고 0 인데스도 배열로 선언
+ $member[0] = array();
+  $member[0]['name'] = 'sys';
+  $member[0]['userID'] = 'o3o';
+  $member[0]['email'] = 'o3o@naver.naver.com';
+
+  $member[1] = array();
+   $member[1]['name'] = 'nu';
+   $member[1]['userID'] = 'sls';
+   $member[1]['email'] = 'sls@naver.naver.com';
+
+   $member[2] = array();
+    $member[2]['name'] = 'wo';
+    $member[2]['userID'] = 'abc';
+    $member[2]['email'] = 'abc@naver.naver.com';
+
+    
+    //for($i=0; $i<count($member); $i++)
+    //echo $memeber[i]['name']."<br />";
+    
+
+   foreach ($member as $data){
+     echo $data['name']."<br />";
+   }
+ ?>
