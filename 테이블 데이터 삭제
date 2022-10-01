@@ -1,0 +1,13 @@
+<?php
+  include_once "./connectDB.php";
+
+  $sql = "DELETE FROM myMember WHERE myMemberID = 5";
+  $res = $dbConnect->query($sql);
+
+  if($res){
+    echo "5번 회원의 정보가 삭제되었습니다. ";
+  }
+  else{
+    echo "삭제 실패";
+  }
+?>
